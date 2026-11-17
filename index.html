@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Você decide o futuro da IA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Entrevista</title>
 </head>
 <body>
-    <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        
-        <!-- Tela Inicial -->
-        <div class="caixa-inicial">
-            <p class="texto-inicial">
-                Em novembro de 2022, a humanidade se viu em uma realidade perturbadora. De repente, percebemos que as máquinas evoluíram para além do que imaginávamos. Agora, elas escrevem e falam de um jeito tão parecido com humanos que é quase impossível diferenciar quem foi que escreveu ou falou o quê. Em meio a esse caos de identidade, uma missão surgiu. Nosso objetivo: explorar o impacto da Inteligência Artificial (IA) em nossas vidas e confrontar as possibilidades que o futuro nos reserva. O mundo nunca mais será o mesmo.
-            </p>
-            <button class="btn-iniciar">Iniciar</button>
+     <main>
+        <div class="passo ativo" id="passo-0">
+<img src="img/escritorio.jpg" alt="">
+<p>Você chega em sua entrevista de emprego, aplicando para uma vaga que vai mudar a sua vida.</p>
+            <button class="btn-proximo" data-proximo="1">Chegar em silêncio e ir se sentar direto.</button>
+            <button class="btn-proximo" data-proximo="2">Cumprimentar o recrutador e se apresentar.</button>
         </div>
-
-        <!-- Tela de Perguntas -->
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-
-        <!-- Tela de Resultado -->
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
-            <button class="btn-jogar-novamente">Jogar Novamente</button>
+        <div class="passo" id="passo-1">
+            <p>Com licença, qual é o seu nome?.</p>
+            <button class="btn-proximo" data-proximo="2">Meu nome é Jerferson, eu tenho 18 anos e desejo entrar na empresa.</button>
+            <button class="btn-proximo" data-proximo="3">Jerfeson.</button>
         </div>
-    </div>
-
-    <!-- Removido o type="module" para rodar direto sem servidor local -->
-<script type=”module” src=”Js/Aleatorio.js”></script>
-<script type=”module” src=”Js/Perguntas.js”></script>
-<script type=”module” src=”Js/script.js”></script>
+        <div class="passo" id="passo-2">
+            <p>Bom dia Jerferson, por que você está aplicando para essa vaga?.</p>
+            <button class="btn-proximo" data-proximo="3">Eu preciso de dinheiro para sustentar meu vicio em drogas.</button>
+            <button class="btn-proximo" data-proximo="4">As minhas habilidades se aplicam as necessidades da empresa.</button>
+        </div>
+         <div class="passo" id="passo-3">
+            <p>Você não foi contratado.</p>
+         </div>
+                 <div class="passo" id="passo-4">
+            <p>Continuar a historia.</p>
+            <button class="btn-proximo" data-proximo="5">Resposta 1.</button>
+            <button class="btn-proximo" data-proximo="6">Resposta 2.</button>
+        </div>
+<script src="script.js"></script>
 </body>
 </html>
