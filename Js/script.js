@@ -1,3 +1,5 @@
+import {aleatorio} from "./Aleatorio.Js";
+import {perguntas} from "./Perguntas.Js";
 btnIniciar.addEventListener("click", iniciaJogo);
 
 function iniciaJogo() {
